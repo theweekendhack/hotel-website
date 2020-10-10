@@ -1,0 +1,230 @@
+/* variables declaration*/
+:root
+{
+    --primary-bg-color:#333333;
+    --secondary-bg-color:#f4f4f4;
+    --special-bg-color:#f8bf8a;
+    --secondary2-bg-color:#444444;
+
+    --primary-txt-color:#f4f4f4;
+    --secondary-txt-color:#333333;
+    --sepcial-txt-color:#f8bf8a;
+
+    --primary-btn-bg-color:#333333;
+    --secondary-btn-bg-color:#f4f4f4;
+
+}
+
+
+/*CSS reset*/
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/*GENERAL CSS*/
+
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height:1.4;
+}
+
+/*UTILITIES  CLASSES*/
+
+
+a
+{
+    text-decoration: none;
+}
+p
+{
+    margin-bottom: 30px;
+}
+
+.container
+{
+    max-width: 1200px;
+    width:90%;
+    margin:0 auto;
+}
+
+.txt-secondary-color
+{
+   color:var(--sepcial-txt-color);
+}
+
+.btn
+{
+    display: inline-block;
+    padding:10px 16px;
+    font-size:0.9rem;
+    text-align: center;
+}
+
+.btn-primary
+{
+    background-color: var(--primary-bg-color);
+    color:var(--primary-txt-color);
+
+}
+
+.btn-secondary
+{
+    background-color: var(--secondary-btn-bg-color);
+    color:var(--secondary-txt-color);
+}
+
+.grid
+{
+    display: grid;
+}
+
+.grid-col-2
+{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.grid-col-3
+{
+    grid-template-columns: repeat(3,1fr);
+}
+
+img
+{
+    width:100%;
+    max-width: 100%; /*300px*/
+}
+
+.selected-link
+{
+    background-color: var(--secondary2-bg-color);
+}
+
+/*********************HEADER *******************/
+header
+{
+    background-color: var(--primary-bg-color);
+    color:var(--primary-txt-color);
+}
+
+.grid-header
+{
+ 
+    grid-template-columns: 100px 1fr;
+}
+
+.logo
+{
+    color: var(--primary-txt-color);
+}
+
+
+/************************NAV *******************/
+
+header nav 
+{
+    justify-self: end;
+}
+
+header nav li
+{
+    display: inline-block;
+    padding:16px 32px;
+}
+header nav li a
+{
+    color:var(--primary-txt-color);
+}
+
+/********************HERO SECTION *****************/
+#hero-section
+{
+    height: 600px;
+    background-image: url("../img/showcase.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color:var(--primary-txt-color);
+    padding:60px 0 0 0;
+
+
+}
+
+#hero-section h2
+{
+    margin-bottom: 30px;
+    font-size:2.4rem;
+}
+
+
+/********************HISTORY SECTION *****************/
+#history-section, #history-section div
+{
+    height:300px;
+}
+
+#history-section img
+{
+    height:100%;
+    object-fit: cover;
+
+}
+
+#history-section >div:nth-child(2)
+{
+    
+    background-color: var(--primary-bg-color);
+    text-align: center;
+    color: var(--primary-txt-color);
+    padding:0 32px;
+}
+
+#history-section > div:nth-child(2) h3
+{
+    margin-top:32px;
+    margin-bottom: 16px;
+   
+}
+
+/********************FEATURES SECTION *****************/
+#features-section
+{
+    text-align:center;
+}
+
+#features-section > div:nth-child(2)
+{
+    background-color: var(--special-bg-color);
+}
+
+#features-section i
+{
+    font-size:32px;
+    margin:16px 0px 16px 0px
+}
+
+#features-section h4
+{
+    margin-bottom: 16px;
+}
+
+
+/********************FOOTER SECTION *****************/
+
+footer
+{
+    background-color: var(--secondary2-bg-color);
+    text-align: center;
+    padding:32px 0;
+    color: var(--primary-txt-color);
+}
+
+footer > p
+{
+    margin-bottom: 0px;
+}
+
